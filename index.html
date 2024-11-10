@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Portfolio
+        </title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar"> 
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello!Everyone!!</h3>
+        <h1>I am Aditya Gupta</h1>
+        <h3>And I'am a <span class="multiple-text"></span></h3>
+        <p>I'm a passionate individual working towards becoming a software developer.
+        I am pursuing for Intern's and Job's.
+ </p>
+        <div class="media">
+            <a href="https://www.linkedin.com/in/aditya-gupta-185041127/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/Aditya-Gupta-19"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.facebook.com"><i class='bx bxl-facebook-square'></i></a>
+        </div>
+        <a href="resumepdf.pdf" download class="download">Download CV</a>
+    </div>
+    <div class="img-home">
+        <div class="hexagon-inner">
+        <img src="myphoto.png" alt="my_image">
+    </div>
+</div>
+</section>
+<section class="about" id="about">
+    <div class="about-img">
+       
+        <img src="working.png" alt="my_image">
+ 
+</div> 
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3> <span class="multiple-te"> </span></h3>
+        <div>
+            <p id="bio">
+                I am good at listening and like to be quiet. I have hobbies like playing all sports and am a state player in chess.
+                Reading books is my habit, and I like to code too. I focus on continuously learning new technologies and strengthening
+                my problem-solving skills through DSA.
+            </p>
+            <p id="moreText" style="display: none;">
+                I am passionate about exploring different algorithms and different coding challenges periodly. My career
+                in tech is focused on developing a strong foundation in cloud .
+            </p>
+            <a href="#" class="download" onclick="toggleText(event)">Read More</a>
+        </div>
+        <script>
+            function toggleText(event) {
+                event.preventDefault(); // Prevents page jump
+                const moreText = document.getElementById("moreText");
+                const readMoreLink = document.querySelector(".download");
+            
+                if (moreText.style.display === "none") {
+                    moreText.style.display = "block";
+                    readMoreLink.textContent = "Read Less";
+                } else {
+                    moreText.style.display = "none";
+                    readMoreLink.textContent = "Read More";
+                }
+            }
+            </script>
+                    
+</section>
+<section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <p id="bio">I am good at MERN Stack.</p>
+            <p id="moreText" style="display: none;">
+                I have experience in building full-stack applications using MongoDB, Express.js, React, and Node.js. 
+                My projects focus on creating responsive, high-performance applications.
+            </p>
+            <a href="#" class="download" onclick="toggleText(event)">Read More</a>
+            <script>
+                function toggleText(event) {
+                    event.preventDefault(); // Prevents page jump
+                    const moreText = document.getElementById("moreText");
+                    const readMoreLink = document.querySelector(".download");
+                
+                    if (moreText.style.display === "none") {
+                        moreText.style.display = "block";
+                        readMoreLink.textContent = "Read Less";
+                    } else {
+                        moreText.style.display = "none";
+                        readMoreLink.textContent = "Read More";
+                    }
+                }
+                </script>
+                            
+        </div>
+            <div class="services-box">
+                <i class='bx bxl-java' ></i>
+                <h3>Java Developer</h3>
+                <p>Java project on college information system </p>
+                <a href="#" class="download">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-cloud'></i>
+                <h3>Cloud Engineer</h3>
+                <p>I like to study cloud </p>
+                <a href="#" class="download">Read More</a>
+            </div>
+    </div>
+</section>
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+        <img src="ngowebsite.png">
+        <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>It's a mern stack project</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="netbean.png">
+            <div class="portfolio-layer">
+                <h4>Java Netbean Project</h4>
+                <p></p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image.png">
+                <div class="portfolio-layer">
+                    <h4>it's a HTML,CSS,PHP Project</h4>
+                    <p></p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+                </div>
+                <div class="portfolio-container">
+                    <div class="portfolio-box">
+                        <img src="cloud.png" alt="Portfolio Image">
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>It's a cloud basic EC2 project</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-container">
+                    <div class="portfolio-box">
+                        <img src="java.png" alt="Portfolio Image">
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>It's a java chess application project</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!!!</span></h2>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email Address">
+            <input type="text" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea> 
+        <input type="submit" value="Send Message" class="download">
+    </form>
+</section>
+ <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by Codehal | All Right Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+ </footer>
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="scripts.js"></script>
+    </body>
+</html>
